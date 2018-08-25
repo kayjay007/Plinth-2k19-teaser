@@ -4971,3 +4971,250 @@ p a {
         margin-bottom: 35px
     }
 }
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: black;
+  margin: 0;
+  padding: 3em;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: limegreen;
+}
+
+.filterwrapper {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.svgtext {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-bottom: 3em;
+}
+
+hr {
+  height: 0;
+  border-bottom: solid #cccccc 1px;
+}
+
+.glitch-filter-example {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 4em 0 2em;
+  min-width: 490px;
+}
+
+.glitch-filter-example__heading {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.glitch-filter-example__filtered-text {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 68px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.top-r,
+.bot-r,
+.top-g,
+.bot-g {
+  stroke: #ffffff;
+}
+
+.top-r {
+  stroke-width: 100px;
+  -webkit-animation: topani 3.5s linear infinite;
+          animation: topani 3.5s linear infinite;
+}
+
+.bot-r {
+  stroke-width: 100px;
+  -webkit-animation: botani 4s linear infinite;
+          animation: botani 4s linear infinite;
+}
+
+.top-g {
+  stroke-width: 50px;
+  animation: topani 4s linear reverse infinite;
+}
+
+.bot-g {
+  stroke-width: 50%;
+  animation: botani 3.5s linear reverse infinite;
+}
+
+@-webkit-keyframes topani {
+  1% {
+    stroke-width: 32px;
+  }
+  13% {
+    stroke-width: 46px;
+  }
+  23% {
+    stroke-width: 186px;
+  }
+  30% {
+    stroke-width: 102px;
+  }
+  32% {
+    stroke-width: 21px;
+  }
+  47% {
+    stroke-width: 169px;
+  }
+  50% {
+    stroke-width: 98px;
+  }
+  56% {
+    stroke-width: 196px;
+  }
+  71% {
+    stroke-width: 63px;
+  }
+  75% {
+    stroke-width: 131px;
+  }
+  83% {
+    stroke-width: 92px;
+  }
+  95% {
+    stroke-width: 18px;
+  }
+}
+
+@keyframes topani {
+  1% {
+    stroke-width: 32px;
+  }
+  13% {
+    stroke-width: 46px;
+  }
+  23% {
+    stroke-width: 186px;
+  }
+  30% {
+    stroke-width: 102px;
+  }
+  32% {
+    stroke-width: 21px;
+  }
+  47% {
+    stroke-width: 169px;
+  }
+  50% {
+    stroke-width: 98px;
+  }
+  56% {
+    stroke-width: 196px;
+  }
+  71% {
+    stroke-width: 63px;
+  }
+  75% {
+    stroke-width: 131px;
+  }
+  83% {
+    stroke-width: 92px;
+  }
+  95% {
+    stroke-width: 18px;
+  }
+}
+@-webkit-keyframes botani {
+  1% {
+    stroke-width: 104px;
+  }
+  11% {
+    stroke-width: 90px;
+  }
+  20% {
+    stroke-width: 15px;
+  }
+  33% {
+    stroke-width: 34px;
+  }
+  40% {
+    stroke-width: 127px;
+  }
+  50% {
+    stroke-width: 186px;
+  }
+  55% {
+    stroke-width: 174px;
+  }
+  65% {
+    stroke-width: 128px;
+  }
+  77% {
+    stroke-width: 21px;
+  }
+  89% {
+    stroke-width: 164px;
+  }
+  96% {
+    stroke-width: 109px;
+  }
+}
+@keyframes botani {
+  1% {
+    stroke-width: 104px;
+  }
+  11% {
+    stroke-width: 90px;
+  }
+  20% {
+    stroke-width: 15px;
+  }
+  33% {
+    stroke-width: 34px;
+  }
+  40% {
+    stroke-width: 127px;
+  }
+  50% {
+    stroke-width: 186px;
+  }
+  55% {
+    stroke-width: 174px;
+  }
+  65% {
+    stroke-width: 128px;
+  }
+  77% {
+    stroke-width: 21px;
+  }
+  89% {
+    stroke-width: 164px;
+  }
+  96% {
+    stroke-width: 109px;
+  }
+}
